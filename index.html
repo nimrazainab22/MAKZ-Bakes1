@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>MAKZ Bakes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #fdf8f4;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4b2e2e, #7a4b4b);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    nav a {
+      color: #ffd6c0;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1606312619070-d48b4c652a52') center/cover;
+      height: 65vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .hero h2 {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: 280px;
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    button {
+      background: #4b2e2e;
+      color: white;
+      border: none;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #6b3e3e;
+    }
+
+    footer {
+      background: #4b2e2e;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>MAKZ Bakes</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Delicious. Healthy. Gluten-Free.</h2>
+  </section>
+
+  <section id="products" class="section">
+    <h2>Our Brownies</h2>
+
+    <div class="products">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c">
+        <h3>Mocha Brownies</h3>
+        <p>Healthy brownies with dates & oats.</p>
+        <button>Order Now</button>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52">
+        <h3>CocoPro Brownies</h3>
+        <p>Rich in fiber & antioxidants.</p>
+        <button>Order Now</button>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>
+      MAKZ Bakes is a modern dessert brand focused on healthy indulgence.
+    </p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>📞 03184759970</p>
+    <p>📧 makzbakes@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2026 MAKZ Bakes</p>
+  </footer>
+
+</body>
+
+</html>
